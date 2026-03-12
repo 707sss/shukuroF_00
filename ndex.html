@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: 
+    url("aa.jpg") center/cover no-repeat fixed,
+    linear-gradient(135deg,#0f0f0f,#1a1a2e,#111827);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.container{
+    width:400px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+h1, b{
+    color:#000000;
+}
+
+hr{
+    color:#191970;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    margin:18px 0;
+    border-radius:6px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:scale(1.04);
+}
+
+.card img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid white;
+}
+
+.username{
+    font-size:17px;
+    font-weight:600;
+}
+
+.platform{
+    font-size:13px;
+    color:#aaa;
+}
+
+.telegram:hover{
+    box-shadow:0 0 20px #0088cc;
+    border-color:#0088cc;
+}
+
+.instagram:hover{
+    box-shadow:0 0 20px #e1306c;
+    border-color:#e1306c;
+}
+    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>707sss</title>
+
+<!-- CSS ulash -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+   <h1><b>WW</b></h1>
+   <hr><br>
+
+    <!-- Telegram Profile -->
+    <a href="https://t.me/ShukuroF_00" class="card telegram">
+        <img src="ww.jpg" alt="Telegram Profile">
+        <div>
+            <div class="username">@Ш У К У Р О В</div>
+            <div class="platform">Telegram</div>
+        </div>
+    </a>
+
+    <!-- Instagram Profile 1 -->
+    <a href="https://www.instagram.com/althair_abusaulty" target="_blank" class="card instagram">
+        <img src="шшш.jpg" alt="Instagram 1">
+        <div>
+            <div class="username">@althair_abusaulty</div>
+            <div class="platform">Instagram</div>
+        </div>
+    </a>
+
+    <!-- Instagram Profile 2 -->
+    <a href="https://www.instagram.com/ww_web_00" target="_blank" class="card instagram">
+        <img src="ww.jpg" alt="Instagram 2">
+        <div>
+            <div class="username">@ww_web_00</div>
+            <div class="platform">Instagram</div>
+        </div>
+    </a>
+
+    <!-- Instagram Profile 3 -->
+    <a href="https://www.instagram.com/227unlocked" target="_blank" class="card instagram">
+        <img src="277.jpg" alt="Instagram 3">
+        <div>
+            <div class="username">@227unlocked</div>
+            <div class="platform">Instagram</div>
+        </div>
+    </a>
+</div>
+
+<!-- JS ulash -->
+<script src="script.js">// Sahifa yuklanganda animatsiya
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+
+        setTimeout(() => {
+            card.style.transition = "0.5s";
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }, index * 200);
+    });
+});</script>
+
+</body>
+</html>
